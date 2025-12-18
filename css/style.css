@@ -331,3 +331,90 @@ body {
   color: #032d5b;
   text-decoration: none;
 }
+
+/* --- Media Queries --- */
+
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .work-gallery {
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 15px;
+    gap: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro-image-container,
+  .intro-text-container {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .intro-text-container {
+    transform: translateY(0);
+    margin-top: 30px;
+  }
+
+  .work-item {
+    width: 100%;
+    float: none;
+    margin-bottom: 40px;
+  }
+
+  .work-gallery {
+    display: block;
+    padding: 20px;
+  }
+
+  .gallery-item {
+    width: 48%;
+    float: left;
+    margin: 1%;
+    height: 150px;
+  }
+
+  .info-left,
+  .info-right {
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .email-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-gallery::after,
+  .intro-section::after,
+  .contact-section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
