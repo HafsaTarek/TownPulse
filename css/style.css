@@ -21,7 +21,6 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1.5rem 8%;
   position: absolute;
   width: 100%;
@@ -279,7 +278,7 @@ body {
 }
 
 .contact-line {
-  width: 150px;
+  width: 100%;
   border: 2px solid white;
   margin: 0 0 30px 0;
 }
